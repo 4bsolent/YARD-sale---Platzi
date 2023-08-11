@@ -1,0 +1,157 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Menu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+    :root {
+
+        /* Colors */
+
+        --black: #000000;
+        --hospitalGreen: #ACD9B2;
+        --textInputField: #F7F7F7;
+        --veryligthPink: #C7C7C7;
+        --white: #FFFFFF;
+
+        /* Font Size */
+        
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+
+    }
+
+    body {
+
+        /* Fonts */
+
+        font-family: 'Quicksand', sans-serif;
+
+        margin: 0;
+    }
+
+    /* Top List */
+
+    .mobile-size {
+        width: 425px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .categories-list {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        margin-left: 35px;
+        position: relative;
+    }
+
+    .categories-list span {
+        position: absolute;
+        top: -12px;
+        right:20px;
+        color: var(--veryligthPink);
+        font-weight: 300;
+    }
+
+    .categories-list li:nth-child(8) {
+        margin-bottom: 16px;
+    }
+
+    .categories-list h3 {
+        margin-bottom: 30px;
+    }
+
+    .categories-list li {
+        height: 48px;
+        list-style: none;
+    }
+
+    .categories-list li a {
+        text-decoration: none;
+        color: var(--black);
+        font-weight: bold;
+    }
+
+    /* Bottom List */
+
+    .profile-list {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        border-top: solid 0.2px var(--veryligthPink);
+    }
+
+    .profile-list li {
+        list-style: none;
+    }
+
+    .profile-list li a {
+        text-decoration: none;
+    }
+
+    .profile-list li:nth-child(1) {
+        margin-top: 40px;
+    }
+
+    .profile-list li:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    .profile-list li:nth-child(1), 
+    .profile-list li:nth-child(2) {
+        height: 48px;
+    }
+
+    .profile-list li:nth-child(1) a, 
+    .profile-list li:nth-child(2) a {
+        color: var(--black);
+        font-weight: bold;
+    }
+
+    .profile-list span {
+        display: inline-block;
+        font-size: var(--md);
+        color: var(--black);
+        font-weight: 100;
+        margin-bottom: 8px;
+    }
+   
+    #prueba {
+        color: var(--hospitalGreen);
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="mobile-size">
+
+        <div class="mobile-menu">
+            <ul class="categories-list">
+                <span>X</span>
+                <h3>CATEGORIES</h3>
+                <li><a href="">All</a></li>
+                <li><a href="">Clothes</a></li>
+                <li><a href="">Electronics</a></li>
+                <li><a href="">Fornitures</a></li>
+                <li><a href="">Toys</a></li>
+                <li><a href="">Others</a></li>
+            </ul>
+
+            <ul class="profile-list">
+                <li><a href="">My orders</a></li>
+                <li><a href="">My account</a></li>
+                <span>ba.aldana92@gmail.com</span>
+                <li><a id="prueba" href="">Sign out</a></li>
+            </ul>
+        </div>
+    
+    </div>
+</body>
+</html>

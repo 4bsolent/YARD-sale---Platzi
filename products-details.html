@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products-details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+    :root {
+
+        /* Colors */
+
+        --black: #000000;
+        --hospitalGreen: #ACD9B2;
+        --textInputField: #F7F7F7;
+        --veryligthPink: #C7C7C7;
+        --white: #FFFFFF;
+
+        /* Font Size */
+        
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+
+    }
+
+    body {
+
+        /* Fonts */
+
+        font-family: 'Quicksand', sans-serif;
+
+        margin: 0;
+        position: relative;
+    }
+
+    .product-detail {
+        position: absolute;
+        right: 0;
+        width: 360px;
+    }
+
+    .close-icon-container {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 12px;
+        left: 12px;
+        background-color: var(--white);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-img {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .pointers-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pointer {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-radius: 50%;
+        margin: 4px;
+        background-color: var(--veryligthPink);
+    }
+
+    .first {
+        background-color: var(--hospitalGreen);
+    }
+
+    .product-info-container {
+        width: 100%;
+    }
+
+    .product-info-container p {
+        margin: 0;
+        padding: 0;
+        padding-left: 14px;
+    }
+
+    .product-info-container p:nth-child(1) {
+        margin-top: 24px;
+        margin-bottom: 4px;
+        font-weight: bold;
+    }
+
+    .product-info-container p:nth-child(2) {
+        margin-bottom: 24px;
+        font-weight: 300;
+        font-size: var(--sm);
+        color: var(--veryligthPink);
+    }
+
+    .product-info-container p:nth-child(3) {
+        font-weight: 300;
+        font-size: var(--sm);
+        color: var(--black);
+    }
+
+    .primary-button {
+        width: 90%;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px auto;
+        background-color: var(--hospitalGreen);
+        border: none;
+        border-radius: 12px;
+        color: var(--white);
+        font-weight: bold;
+    }
+
+    @media (max-width:425px) {
+        .product-detail {
+            width: 100%;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <aside class="product-detail">
+        <span class="close-icon-container"><img src="./icons/icon_close.png" alt="close-icon" class="close-icon"></span>
+        <img src="https://images.pexels.com/photos/776092/pexels-photo-776092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="product img" class="product-img">
+        <div class="pointers-container">
+            <span class="pointer first"></span>
+            <span class="pointer"></span>
+            <span class="pointer"></span>
+        </div>
+        <div class="product-info-container">
+            <p class="price">$ 120,00</p>
+            <p class="name">Super Nintendo Control</p>
+            <p class="product-info">El control Super Nintendo Entertainment System™ está destinado para su uso con los juegos clásicos de Super Nintendo Entertainment System - Nintendo Switch Online en Nintendo Switch. El control está diseñado para parecerse y funcionar como el control original de Super NES, lo que añade una experiencia auténtica al jugar a los juegos clásicos de Super NES™.</p>
+        </div>
+        <button type="button" class="primary-button"><img src="./icons/bt_add_to_cart.svg" alt=""> Add to cart</button>
+    </aside>
+</body>
+</html>

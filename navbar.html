@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+    :root {
+
+        /* Colors */
+
+        --black: #000000;
+        --hospitalGreen: #ACD9B2;
+        --textInputField: #F7F7F7;
+        --veryligthPink: #C7C7C7;
+        --white: #FFFFFF;
+
+        /* Font Size */
+        
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+
+    }
+
+    body {
+
+        /* Fonts */
+
+        font-family: 'Quicksand', sans-serif;
+
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 24px;
+        box-shadow: 0px 0px 5px var(--veryligthPink);
+    }
+
+    .menu-icon {
+        display: none;
+    }
+
+    .logo {
+        width: 130px;
+    }
+
+    .navbars-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-left {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        margin-left: 24px;
+    }
+
+    .navbar-left li {
+        padding: 10px;
+        border: solid 1px var(--white);
+        border-radius: 8px;
+    }
+
+    .navbar-left li:hover {
+        border-color: var(--hospitalGreen);
+    }
+
+    .navbar-left li a {
+        text-decoration: none;
+        color: var(--veryligthPink);
+    }
+
+    .navbar-right {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        margin-right: 12px;
+    }
+
+    .navbar-right li {
+        padding: 10px;
+        font-size: var(--sm);
+        color: var(--black);
+        font-weight: 300;
+    }
+
+    .navbar-right img {
+        transform: rotate(90deg);
+    }
+
+    .shopping-cart-container {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shopping-cart-container span {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: -5px;
+        right: -5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+        font-weight: bold;
+        background-color: var(--hospitalGreen);
+        border-radius: 50%;
+    }
+
+    @media (max-width:760px) {
+        .menu-icon {
+            display: block;
+        }
+
+        .navbar-left {
+            display: none;
+        }
+
+        .navbars-container {
+            display: none;
+        }
+
+    }
+
+    @media (max-width:1000px) {
+
+        .navbar-left {
+            margin: 0;
+        }
+
+        .navbar-right {
+            display: none;
+        }
+
+        .navbars-container {
+            justify-content: center;
+        }
+
+    }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+
+        <img src="./icons/icon_menu.svg" alt="menu icon" class="menu-icon">
+    
+        <img src="./logos/logo_yard_sale.svg" alt="logo yardsale" class="logo">
+    
+        <div class="navbars-container">
+            <ul class="navbar-left">
+                <li><a href="">All</a></li>
+                <li><a href="">Clothes</a></li>
+                <li><a href="">Electronics</a></li>
+                <li><a href="">Furniture</a></li>
+                <li><a href="">Toys</a></li>
+                <li><a href="">Others</a></li>
+            </ul>
+    
+            <ul class="navbar-right">
+                <li>ba.aldana92@gmail.com</li>
+                <img src="./icons/flechita.svg" alt="">
+            </ul>
+        </div>
+    
+        <div class="shopping-cart-container">
+            <img src="./icons/icon_shopping_cart.svg" alt="">
+            <span>2</span>
+        </div>
+    </nav>
+</body>
+</html>

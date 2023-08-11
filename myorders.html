@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My orders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+    :root {
+
+        /* Colors */
+
+        --black: #000000;
+        --hospitalGreen: #ACD9B2;
+        --textInputField: #F7F7F7;
+        --veryligthPink: #C7C7C7;
+        --white: #FFFFFF;
+
+        /* Font Size */
+        
+        --sm: 14px;
+        --md: 16px;
+        --lg: 18px;
+
+    }
+
+    body {
+
+        /* Fonts */
+
+        font-family: 'Quicksand', sans-serif;
+
+        margin: 0;
+    }
+
+    .my-orders {
+        width: 100%;
+    }
+
+    .orders-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .order-info-card {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .order-info-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .order-info-1 p {
+        margin: 0;
+    }
+
+    .date {
+        font-size: var(--md);
+        font-weight: bold;
+    }
+
+    .articles {
+        font-size: var(--sm);
+        font-weight: 200;
+        color: var(--veryligthPink);
+    }
+
+    .order-info-2 {
+        display: flex;
+    }
+
+    .order-info-2 p {
+        margin: 0;
+    }
+
+    .order-info-2 span {
+        margin-left: 16px;
+    }
+    </style>
+</head>
+<body>
+    <div class="my-orders">
+        <div class="orders-container">
+            <div class="order-info-card">
+
+                <div class="order-info-1">
+                    <p class="date">04.05.2021</p>
+                    <p class="articles">6 articles</p>
+                </div>
+                <div class="order-info-2">
+                    <p class="price">$600,00</p>
+                    <span><img src="./icons/flechita.svg" alt=""></span>
+                </div>
+            </div>
+
+            <div class="order-info-card">
+                <div class="order-info-1">
+                    <p class="date">04.05.2021</p>
+                    <p class="articles">6 articles</p>
+                </div>
+                <div class="order-info-2">
+                    <p class="price">$600,00</p>
+                    <span><img src="./icons/flechita.svg" alt=""></span>
+                </div>
+            </div>
+
+            <div class="order-info-card">
+                <div class="order-info-1">
+                    <p class="date">04.05.2021</p>
+                    <p class="articles">6 articles</p>
+                </div>
+                <div class="order-info-2">
+                    <p class="price">$600,00</p>
+                    <span><img src="./icons/flechita.svg" alt=""></span>
+                </div>
+            </div>
+
+            <div class="order-info-card">
+                <div class="order-info-1">
+                    <p class="date">04.05.2021</p>
+                    <p class="articles">6 articles</p>
+                </div>
+                <div class="order-info-2">
+                    <p class="price">$600,00</p>
+                    <span><img src="./icons/flechita.svg" alt=""></span>
+                </div>
+            </div>
+
+            <div class="order-info-card">
+                <div class="order-info-1">
+                    <p class="date">04.05.2021</p>
+                    <p class="articles">6 articles</p>
+                </div>
+                <div class="order-info-2">
+                    <p class="price">$600,00</p>
+                    <span><img src="./icons/flechita.svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
